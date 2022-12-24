@@ -161,4 +161,8 @@ init();
 // git init
 // git config --global craycho
 // git status   prikaze sve untracked fileove
-// git add -A   tracka sve fileove, moze i pojedinacno
+
+// git add -A   // Tracka sve fileove, moze i pojedinacno
+// git commit -m "Initial commit"   // Da se commita kod, prvi commit je inace "Initial commit"
+
+// git reset --hard HEAD    // Da se vrati na prethodni commit, u slucaju buga npr
