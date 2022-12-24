@@ -178,3 +178,10 @@ init();
 // git branch new-feature   // Create novi branch "new-feature", koji je kopija postojeceg master brancha
 // git checkout IMEBRANCHA (new-feature)   // Prebaci na taj branch
 // git merge IMEBRANCHA   // Mergea branch na kojem smo trenutno sa imenovanim branchom
+/* Inace se ne radi u master branchu, nego u drugom koji se kad je zavrsen mergea sa masterom */
+
+// git remote add origin https://github.com/craycho/forkify-course-video.git
+// "origin" je ime online brancha i moze biti bilo koje, cisto je origin convetion
+
+// git push origin master
+// tj. git push imeOnlineBrancha imeLocalBrancha    // Pusha local u remote repository
