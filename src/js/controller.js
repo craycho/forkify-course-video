@@ -133,6 +133,9 @@ const controlAddRecipe = async function (newRecipe) {
     addRecipeView.renderError(err.message);
   }
 };
+const newFeature = function () {
+  console.log("Welcome to the application");
+};
 
 const init = function () {
   // Publisher-subscriber pattern
@@ -143,6 +146,7 @@ const init = function () {
   searchView.addHandlerSearch(controlSearchResults);
   paginationView.addHandlerClick(controlPagination);
   addRecipeView.addHandlerUpload(controlAddRecipe);
+  newFeature();
 };
 init();
 
@@ -166,3 +170,10 @@ init();
 // git commit -m "Initial commit"   // Da se commita kod, prvi commit je inace "Initial commit"
 
 // git reset --hard HEAD    // Da se vrati na prethodni commit, u slucaju buga npr
+// git log    // Displaya sve commitove
+// git reset --hard ID    // ID commita na koji se zelimo vratiti
+/* Sve ovo je losa praksa, treba instead praviti branchove */
+
+// git branch   // Displaya postojece branchove
+// git branch new-feature   // Create novi branch "new-feature", koji je kopija postojeceg master brancha
+// git checkout IME BRANCHA (new-feature)   // Prebaci na taj branch
