@@ -182,6 +182,15 @@ init();
 // git push origin master
 // tj. git push imeOnlineBrancha imeLocalBrancha    // Pusha local u remote repository
 
+/* TLDR;
+
+1) git add -A
+2) git commit -m "Message"
+3) git push origin master   ([onlineBranch] [offlineBranch])
+4) !?!?!? profit (+ je site automatski updated jer je sa netflify povezan)
+
+*/
+
 // ---------- Netlify -----------
 
 // Kada povezujemo site sa git repository na netlifyu, pod build
