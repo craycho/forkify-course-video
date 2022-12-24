@@ -176,4 +176,5 @@ init();
 
 // git branch   // Displaya postojece branchove
 // git branch new-feature   // Create novi branch "new-feature", koji je kopija postojeceg master brancha
-// git checkout IME BRANCHA (new-feature)   // Prebaci na taj branch
+// git checkout IMEBRANCHA (new-feature)   // Prebaci na taj branch
+// git merge IMEBRANCHA   // Mergea branch na kojem smo trenutno sa imenovanim branchom
