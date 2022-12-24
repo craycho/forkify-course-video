@@ -133,9 +133,6 @@ const controlAddRecipe = async function (newRecipe) {
     addRecipeView.renderError(err.message);
   }
 };
-const newFeature = function () {
-  console.log("Welcome to the application");
-};
 
 const init = function () {
   // Publisher-subscriber pattern
@@ -146,7 +143,6 @@ const init = function () {
   searchView.addHandlerSearch(controlSearchResults);
   paginationView.addHandlerClick(controlPagination);
   addRecipeView.addHandlerUpload(controlAddRecipe);
-  newFeature();
 };
 init();
 
@@ -167,7 +163,7 @@ init();
 // git status   prikaze sve untracked fileove
 
 // git add -A   // Tracka sve fileove, moze i pojedinacno
-// git commit -m "Initial commit"   // Da se commita kod, prvi commit je inace "Initial commit"
+// git commit -m "Initial commit"   // Da se commita kod u lokalni git repository, prvi commit je inace "Initial commit"
 
 // git reset --hard HEAD    // Da se vrati na prethodni commit, u slucaju buga npr
 // git log    // Displaya sve commitove
@@ -181,7 +177,14 @@ init();
 /* Inace se ne radi u master branchu, nego u drugom koji se kad je zavrsen mergea sa masterom */
 
 // git remote add origin https://github.com/craycho/forkify-course-video.git
-// "origin" je ime online brancha i moze biti bilo koje, cisto je origin convetion
+// "origin" je ime online brancha ([alias] [url]) i moze biti bilo koje, cisto je origin convetion
 
 // git push origin master
 // tj. git push imeOnlineBrancha imeLocalBrancha    // Pusha local u remote repository
+
+// ---------- Netlify -----------
+
+// Kada povezujemo site sa git repository na netlifyu, pod build
+// command stavimo lokalni build command, tj. "parcel build index.html --dist-dir ./dist"
+// iz package.json, na taj nacin se runa build command kada god postoji
+// promjena u repositoryu

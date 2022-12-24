@@ -58,7 +58,7 @@ export const loadSearchResults = async function (query) {
     state.search.query = query;
     // Get ce data i istovremeno convertovati u JSON (returna promise), a returnati error ako nesto nije u redu
     const data = await AJAX(`${API_URL}?search=${query}&key=${KEY}`);
-    console.log(data);
+    // console.log(data);
 
     // data.data.recipes je niz, pa ga map da iz njeg dobijemo drugi ciji ce clanovi biti objekti
     state.search.results = data.data.recipes.map(rec => {
